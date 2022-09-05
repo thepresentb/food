@@ -1,0 +1,493 @@
+/* reset ccc */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-align: center; */
+}
+
+.col-half {
+    width: 50%;
+}
+
+#wrapper {
+  
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+
+#header {
+    height: 46px;
+    background-color: green;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    width: 100%;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    /* height: 46px; */
+    position: relative;
+}
+
+#nav > li {
+    display:inline-block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a {
+    color: #000;
+    height: 46px;
+    background-color: #ccc;
+}
+
+
+#nav .subnav li:hover a {
+    color: #000;
+    padding: 12px 24px;
+    /* height: 46px; */
+    background-color: #ccc;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    list-style-type: none;
+    background-color: #fff;
+}
+
+#nav .subnav a {
+    min-width: 160px;
+}
+
+/* #nav .nav-arrow-down {
+    font-size: 14px;
+} */
+#header .nav-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .nav-menu, 
+#header .nav-button {
+    /* kéo đối tượng sang trái */
+    float: right;
+    height: 46px;
+}
+
+#header .button-menu, 
+#header .button-search {
+    line-height: 46px;
+    padding: 0 20px;
+    color: #fff;
+}
+
+#header .nav-button:hover {
+    background: red;
+    cursor: pointer;
+}
+
+#header .nav-menu:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#header .nav-menu:hover .button-menu {
+    color: #000;
+}
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(/assets/img/slider/slider3.jpg) top center / cover no-repeat;
+    position: relative;
+}
+
+#slider .slider-content {
+    position: absolute;
+    bottom: 48px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .content-heading {
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: cursive;
+}
+
+#slider .content-description {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+#content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .content-section {
+    max-width: 800px;
+    text-align: center;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    /* margin: 10px 0; */
+    padding: 20px 0;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#content .section-sub-heading {
+    padding-bottom: 20px;
+    font-size: 15px;
+      /* làm mờ độ trong suốt */
+    opacity: 0.6;
+}
+
+#content .section-dec {
+    line-height: 1.6;
+    font-size: 1.5;
+    text-align: justify;
+}
+
+/* căn chỉnh 2 ảnh ngang nhau */
+#content .member-list {
+    display: flex;
+    padding: 32px 0;
+}
+
+#content .member-item {
+    width: 50%;
+    /* float: left; */
+}
+
+#content .member-name {
+    margin: 15px;
+    text-transform: uppercase;
+}
+
+
+#content .member-item > img {
+    width: 154px;
+    border-radius: 4px;
+}
+
+#content .tuor-date {
+    background-color: #fff;
+    max-width: 766px;
+    border: 2px solid rgb(204, 204, 204);
+    list-style-type: none;
+    text-align: left;
+}
+
+#content .date-item {
+    border-bottom: 1px solid rgb(221 221 221);
+    padding: 8px 16px;
+    color: rgb(117 117 117)!important;
+}
+ 
+#content .date-item-stt { 
+    background: red;
+    margin-left: 16px;
+    padding: 3px 8px;
+    color: rgb(255 255 255)!important;
+}
+
+#content .quantity {
+    float: right;
+    font-size: 15px;
+    background-color: rgb(0 0 0);
+    color: rgb(255 255 255);
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    margin: -3px;
+    /* display: block; */
+}
+
+#content .tour-location {
+    max-width: 800px;
+    margin: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+#content .location-item {
+    width: 33.333333%;
+    background-color: #fff;
+    /* margin: 0 8px; */
+}
+
+#content img {
+    width: 100%;
+}
+
+#content img:hover {
+    opacity: 0.6;
+}
+
+#content .special-location {
+    margin: 0 16px;
+}
+
+#content .location-info {
+    padding: 0 16px;
+    text-align: justify;
+}
+
+#content .location-name {
+    margin: 15px 0;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+#content .location-date {
+    opacity: 0.6;
+    margin: 15px 0;
+}
+
+#content .location-dec {
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+#content .location-button {
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border-width: 0 !important;
+}
+
+#content .location-button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(204, 204, 204);
+}
+
+#content .contact {
+    display: flex;
+    padding: 32px 0;
+}
+
+#content .contact-info {
+    font-size: 18px;
+    font-family: sans-serif;
+    width: 50%;
+    text-align: left;
+    line-height: 1.6;
+}
+
+#content .contact-info i {
+    padding-right: 10px;
+}
+
+#content .contact-input {
+    width: 49.999999%;
+}
+
+#content .div-input-name {
+    margin-right: 8px;
+    display: contents;
+}
+
+#content .input-name-email {
+    margin: 0 -5px 8px;
+}
+
+#content .input-name, #content  .input-email {
+    border: 1px solid rgb(204 204 204);
+    padding: 8px;
+    /* width: 49%; */
+}
+
+#content  .div-input-email{
+    float: right;
+}
+
+#content .input-mes input {
+    border: 1px solid rgb(204 204 204);
+    padding: 8px;
+    width: 100%;
+}
+
+#content .form-submit {
+    float: right;
+    border: none;
+    padding: 8px 16px;
+    margin: 10px 0;
+    background-color: rgb(0 0 0);
+    color: rgb(255 255 255);
+}
+
+#content .form-submit:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(204, 204, 204);
+    cursor: pointer;
+}
+
+#content .img-map {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .socials-list {
+    font-size: 24px;
+
+}
+
+#footer .socials-list a {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .socials-list i:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#footer .copyright {
+    color: rgba(0, 0, 0, 0.7);
+    margin: 16px 0;
+}
+
+#footer .copyright a {
+    text-decoration: none;
+}
+
+.modal {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0 0 0 / 40%);
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background: #fff;
+    width: calc(100% - 16px);
+    max-width: 900px;
+    position: relative;
+    animation: madalFaceIn ease 0.5s;
+}
+.modal-close {
+    font-size: 16px;
+    padding: 12px 12px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+}
+.modal-close :hover {
+    opacity: 0.8;
+    background-color: #ccc;
+}
+.modal-header {
+    height: 130px;
+    background-color: rgb(0 150 136);
+    color: rgb(255 255 255);
+    text-align: center;
+    line-height: 130px;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+.modal-body {
+    display: grid;
+    padding: 0 16px;
+    line-height: 1.5;
+}
+.modal-label {
+    margin: 15px 0;
+}
+.modal-input {
+    border: 1px solid rgb(204 204 204);
+    padding: 8px;
+    width: 100%;
+}
+.modal-pay {
+    padding: 16px;
+    width: 100%;
+    background-color: rgb(0 150 136);
+    margin: 15px 0;
+    border: none;
+    text-transform: uppercase;
+}
+
+.modal-pay:hover {
+    background-color: #ccc;
+    color: #000;
+}
+.modal-footer {
+    MARGIN: 16px 16px 30px;
+    float: right;
+}
+
+@keyframes madalFaceIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
